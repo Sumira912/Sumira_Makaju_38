@@ -7,3 +7,15 @@ bool linkedlist ::isEmpty()
     }
     return false;
 }
+
+void linkedlist ::addtohead(int data)
+{
+    node *newnode = new node;
+    newnode->info = data;
+    newnode->next = head;
+    head = newnode;
+    if (tail == NULL)
+    {
+        tail = head;
+    }
+}

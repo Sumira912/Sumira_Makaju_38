@@ -2,7 +2,8 @@
 #include <iostream>
 class node
 {
-    int data;
+public:
+    int info;
     node *next;
 };
 
@@ -16,4 +17,6 @@ public:
     linkedlist();
     ~linkedlist();
     bool isEmpty();
+    void addtohead(int data);
+    void addtotail(int data);
 };
